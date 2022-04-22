@@ -1,0 +1,144 @@
+*{
+margin: 0 ;
+padding: 0 ; 
+}
+/*CSS Variables*/
+:root{ 
+   --navbar-height: 59px ;
+}
+/*Navigation bar*/
+
+#navbar{
+display: flex;
+align-items: center;
+}
+/*logo and image*/
+#logo img {
+   margin: 34px 45px ;
+   height: 100px;
+}
+/* navigation bar list styling */
+#navbar{
+   position: relative;
+}
+#navbar ul{
+   display: flex;
+}
+#navbar::before{
+  content: "";
+background-color: black;
+position: absolute;
+top: 0px;
+bottom: 0px;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.4;
+
+}
+#navbar ul li {
+  list-style: none;
+  font: 2rem;
+}
+#navbar ul li a{
+   color:white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+ }
+ #navbar ul li a:hover {
+   color:black;
+   background-color: white;
+ }
+/* Home section */
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   height: 290px;
+   justify-content: center;
+   align-items: center;
+}
+/* #home ::before{
+content: "";
+   background: url('../download.jpg') no-repeat center center/cover;
+   position: absolute;
+   height: 100%;
+   width: 100px;
+   z-index: -1;
+   opacity: 0.89;} */
+
+#home h1{
+color:darkblue ;
+text-align: center;
+}
+#home p{
+   color:darkblue ;
+   text-align: center;
+   font-size: 1.6rem;
+
+   }
+   /* services section */
+#services{
+margin: 10px;
+display: flex;
+
+
+}
+#services .box{
+border: 2px solid brown;
+padding: 34px;
+margin: 3px 6px;
+border-radius: 28px;
+background: #f2f2f2;
+
+}
+#services .box img{ 
+   height: 160px;
+margin: auto;
+display: block;
+}
+
+#services{}
+#services{}
+#services{}
+
+/* client section  */
+#client-section{
+height: 100px;
+}
+
+#clients{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#clients img{
+  height: 0px;
+}
+
+   /* utility classes */
+   .h-primary{
+      font-size: 3.8rem;
+      padding: 12px;
+   }
+   .h-secondary{
+      font-size: 2.8rem;
+      padding: 12px;
+   }
+   .btn{
+      padding: 8px 20px;
+      border: 2px solid white;
+      background-color: grey;
+      color: white;
+      margin: 17px;
+      font-size: 1.5rem;
+      border: radius 10px; 
+      cursor: pointer;
+   }
+   
+
+   .center{
+   text-align: center;
+}
